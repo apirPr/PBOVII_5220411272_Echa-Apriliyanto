@@ -1,0 +1,1 @@
+git add . && git commit -m "pertemuan-n hal detail" && git push origin main

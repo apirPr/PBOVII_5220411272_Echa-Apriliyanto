@@ -1,0 +1,6 @@
+NAMA: Echa Apriliyanto
+NIM: 5220411272
+FAKULTAS: Sains dan Teknologi
+PRODI: Informatika
+KELAS: Pemrograman Berorientasi Objek Praktik (VII)
+RUANGAN: L.K 2.3
