@@ -1,9 +1,9 @@
 ## Pemrograman Objek Berorientasi Objek Praktik - Kelas VII
-Fakultas: Sains dan Teknologi
-Prodi: Informatika
-Pertemuan: 9
-Ruang: L.K 2.3
-Jenis Tugas: Tugas Kelompok
+Fakultas: Sains dan Teknologi\
+Prodi: Informatika\
+Pertemuan: 9\
+Ruang: L.K 2.3\
+Jenis Tugas: Tugas Kelompok\
 
 ## Anggota
 1. Echa Apriliyanto
