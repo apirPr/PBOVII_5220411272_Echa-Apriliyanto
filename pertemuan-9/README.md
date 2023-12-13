@@ -28,7 +28,8 @@ Class Diagram:
 ![UML CLASS DIAGRAM studi kasus pertemuan-9](./class-diagram.jpg)
 
 ## Output kode program studi kasus pertemuan-9
-```Nama:  paus biru
+```
+Nama:  paus biru
 Sifat:  Karnivora
 Ukuran:  besar
 Jumlah Kaki:  0
@@ -111,4 +112,5 @@ Jumlah Kaki:  2
 Jenis Aves:  merpati
 Bisa Terbang:  True
 
-merpati kipas terbang dengan indah~```
+merpati kipas terbang dengan indah~
+```
