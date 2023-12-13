@@ -4,8 +4,9 @@ Prodi: Informatika\
 Pertemuan: 9\
 Ruang: L.K 2.3\
 Jenis Tugas: Tugas Kelompok
+Kelompok: 7
 
-## Anggota
+## Anggota 
 1. Echa Apriliyanto
    5220411272
 2. Mochamad Fauzan Pratama Putra Sudiana
