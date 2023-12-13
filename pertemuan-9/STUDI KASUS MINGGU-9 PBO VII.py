@@ -27,15 +27,12 @@ class Mamalia(Animal):
 
     def jalan(self):
         if self.bisa_jalan == True:
-            print("tap tap tap")
+            print(f"{self.get_nama()} ~tap tap tap~")
         else:
             print(f"{self._jenis_mamalia} tidak bisa berjalan")
 
     def tampilkan_informasi_hewan(self):
-        print("Nama: ", self.get_nama())
-        print("Sifat: ", self._sifat)
-        print("Ukuran: ", self.ukuran)
-        print("Jumlah Kaki: ", self.jumlah_kaki)
+        super().tampilkan_informasi_hewan()
         print("Jenis Mamalia: ", self._jenis_mamalia)
         print("Bisa Berjalan: ", self.bisa_jalan)
 
@@ -48,15 +45,12 @@ class Aves(Animal):
 
     def terbang(self):
         if self.bisa_terbang == True:
-            print("wush")
+            print(f"{self.get_nama()} terbang ~wush~")
         else:
             print(f"{self._jenis_aves} tidak bisa terbang")
 
     def tampilkan_informasi_hewan(self):
-        print("Nama: ", self.get_nama())
-        print("Sifat: ", self._sifat)
-        print("Ukuran: ", self.ukuran)
-        print("Jumlah Kaki: ", self.jumlah_kaki)
+        super().tampilkan_informasi_hewan()
         print("Jenis Aves: ", self._jenis_aves)
         print("Bisa Terbang: ", self.bisa_terbang)
 
@@ -72,13 +66,13 @@ class Ayam(Aves):
 
     def terbang(self):
         if self.bisa_terbang == True:
-            print("ayam terbang menurun~")
+            print(f"{self.get_nama()} terbang menurun~")
         else:
             print(f"{self._jenis_ayam} tidak bisa terbang")
 
     def adu_ayam(self):
         if self.bisa_diadu == True:
-            print("ayam beradu")
+            print(f"{self.get_nama()} beradu")
         else:
             print(f"{self._jenis_ayam} tidak bisa diadu")
 
@@ -91,20 +85,20 @@ class Merpati(Aves):
         self._jenis_merpati = jenis_merpati
 
     def terbang(self):
-        print("merpati terbang dengan indah~")
+        print(f"{self.get_nama()} terbang dengan indah~")
 
 
-# Mamalia yang tidak bisa berjalan
+# Mamalia yang tidak bisa berjalan ~ (self, jenis_mamalia, bisa_jalan, nama, sifat, ukuran, jumlah_kaki)
 paus_biru = Mamalia("paus", False, "paus biru", "Karnivora", "besar", 0)
 # Mamalia yang bisa berjalan
 kucing = Mamalia("kucing", True, "kucing", "Karnivora", "kecil", 4)
 
-# Aves yang tidak bisa terbang
+# Aves yang tidak bisa terbang ~ (self, jenis_aves, bisa_terbang, nama, sifat, ukuran, jumlah_kaki)
 burung_unta = Aves("burung unta", False, "burung unta", "Herbivora", "besar", 2)
 # Aves yang bisa terbang
 elang_jawa = Aves("elang jawa", True, "elang jawa", "Karnivora", "sedang", 2)
 
-# Ayam yang tidak bisa diadu
+# Ayam yang tidak bisa diadu ~ (self,jenis_ayam,bisa_diadu,jenis_aves,bisa_terbang,nama,sifat,ukuran,jumlah_kaki)
 ayam_hias = Ayam('ayam hias', False, 'ayam', False, 'ayam hias', 'Omnivora', 'kecil', 2)
 # Ayam yang bisa diadu
 ayam_bangkok = Ayam('ayam bangkok', True, 'ayam', False, 'ayam bangkok', 'Omnivora', 'kecil', 2)
@@ -112,44 +106,24 @@ ayam_bangkok = Ayam('ayam bangkok', True, 'ayam', False, 'ayam bangkok', 'Omnivo
 # Ayam yang bisa terbang
 ayam_hutan = Ayam('ayam hutan', True, 'ayam', True, 'ayam hutan', 'Omnivora', 'kecil', 2)
 
-# Merpati
+# Merpati ~ (self, jenis_merpati, jenis_aves, bisa_terbang, nama, sifat, ukuran, jumlah_kaki)
 merpati_kipas = Merpati('merpati kipas', 'merpati', True, 'merpati kipas', 'Omnivora', 'kecil', 2)
 
-paus_biru.tampilkan_informasi_hewan()
-print()
-kucing.tampilkan_informasi_hewan()
-print()
-burung_unta.tampilkan_informasi_hewan()
-print()
-elang_jawa.tampilkan_informasi_hewan()
-print()
-ayam_hias.tampilkan_informasi_hewan()
-print()
-ayam_bangkok.tampilkan_informasi_hewan()
-print()
-ayam_hutan.tampilkan_informasi_hewan()
-print()
-merpati_kipas.tampilkan_informasi_hewan()
-print()
 
-paus_biru.jalan()
-print()
-kucing.jalan()
-print()
+# METHOD CALL
+hewan = [paus_biru, kucing, burung_unta, elang_jawa, ayam_hias, ayam_bangkok, ayam_hutan, merpati_kipas]
+for makhluk in hewan:
+    makhluk.tampilkan_informasi_hewan()
+    print()
 
-burung_unta.terbang()
-print()
-elang_jawa.terbang()
-print()
-ayam_hias.terbang()
-print()
+    if isinstance(makhluk, Mamalia):
+        makhluk.jalan()
 
-ayam_hias.adu_ayam()
-print()
-ayam_bangkok.adu_ayam()
-print()
-ayam_hutan.adu_ayam()
-print()
+    if isinstance(makhluk, Aves):
+        makhluk.terbang()
 
-merpati_kipas.terbang()
-print()
+    if isinstance(makhluk, Ayam):
+        makhluk.adu_ayam()
+
+    print()
+    print()
