@@ -17,7 +17,7 @@ Kode Porgram:
 > STUDI KASUS MINGGU-9 PBO VII.py
 
 Powerpoint:
-> PPT_pertemuan-9 .pdf
+> PPT_pertemuan9_kelompok .pdf
 
 Class Diagram:
 > class-diagram.jpg
