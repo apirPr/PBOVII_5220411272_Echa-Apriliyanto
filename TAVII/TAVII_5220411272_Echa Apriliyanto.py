@@ -58,7 +58,7 @@ class TariTradisional(Tari):
     def adakan_lomba(self, judul_lomba, tanggal, lokasi):
         lomba = {"judul_lomba": judul_lomba, "tanggal": tanggal, "lokasi": lokasi}
         self._daftar_lomba.append(lomba)
-        print(f"Lomba {judul_lomba} berhasil diselenggarakan!")
+        print(f"{judul_lomba} berhasil diselenggarakan!")
 
 
 class TariKontemporer(Tari):
@@ -83,7 +83,7 @@ class TariKontemporer(Tari):
             "lokasi": lokasi,
         }
         self._daftar_workshop.append(workshop)
-        print(f"Workshop {judul_workshop} berhasil diselenggarakan!")
+        print(f"{judul_workshop} berhasil diselenggarakan!")
 
 
 class TariJawa(TariTradisional):
